@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>searching JS terms</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>searching JS terms</h1>
+    <div  aria-label="change theme" class="theme-container">
+      <div class="theme-group">
+        <p class="theme-title">theme</p>
+        <div class="theme">
+          <button class="circle">
+            <div class="circle-in-circle"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <form onsubmit="return false" name="form">
+        <main>
+          <div aria-label="select tags" class="checkbox-container">
+          </div>
+          <div class="search-container">
+            <select  name="select" >
+              <option class="select-class" value="">select class</option>
+            </select>
+            <input class="text-input" type="text" name="text" aria-label="search" value="" placeholder="type for searching">
+          </div>
+        </main>
+    </form>       
+    <div class="num-items-container"></div>
+    <div class="result-container">
+    </div>
+    <script src="glossary.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

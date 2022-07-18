@@ -1,0 +1,208 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(241, 241, 241);
+    width: 100%;
+    transition: .5s;
+}
+.body-theme {
+    background: rgb(16, 5, 47);
+    color: white
+}
+h1 {
+    border: solid rgb(252, 212, 68);
+    display: inline-block;
+    padding: 0 0.5rem;
+    background: rgb(26, 26, 120);
+    color: white;
+    text-align: center;
+}
+.theme-container {
+    position: relative;
+    width: 70%;
+}
+.theme-group{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+.theme-title {
+    margin-right: 1rem;    
+}
+.theme{
+    display: flex;
+    align-items: center;
+    border: solid black;
+    border-radius: 50vh;
+    height: 2rem;
+    width: 3.5rem;
+    transition: .3s;
+
+}
+.theme-theme {
+    background: black;
+    border: solid white;
+}
+.clicked-circle{
+    animation: right .3s forwards;
+}
+.circle {
+    border: solid gray;
+    border-radius: 50vh;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.circle-in-circle{
+    border: solid gray;
+    border-radius: 50vh;
+    height: 1.1rem;
+    width: 1.4rem;
+    background: black;
+}
+.circle-theme{
+    background: white;
+}
+form {
+}
+main {
+    display: flex;
+    
+}
+.checkbox-container {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+
+}
+.each-tag {
+}
+.search-container{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+select {
+    height: 2rem;
+}
+.text-input {
+    height: 1.7rem;
+    margin-left: 1rem;
+    width: 200px;
+    padding: 0 0.5rem;
+
+}
+.num{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: solid black;
+    color: rgb(25, 147, 125);
+    font-weight: bold;
+}
+.no-num {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    border-bottom: solid black;
+    color: rgb(150, 32, 32);
+    font-weight: bold;
+}
+.result-container{
+    width: 80%;
+}
+.each-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    /* background: rgb(243, 247, 226); */
+    border: solid rgb(31, 31, 118);
+    margin-bottom: 1rem;
+}
+.each-item-theme {
+    background: rgb(35, 52, 37);
+    color:white;
+}
+.category {
+    display: flex;
+    border-bottom: solid rgb(169, 168, 168);
+    align-items: center;
+
+}
+.category:last-child {
+    border-bottom: none;
+}
+.title {
+    font-weight: bold;
+    width: 20%;
+}
+.value {
+    width: 80%;
+}
+tag{
+    border: solid orange;
+    border-radius: 50vh;
+    padding: 0.2rem 0.7rem;
+    margin-right: 0.5rem;
+    background: rgb(20, 20, 88);
+    color: white;
+    font-weight: bold;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-top: 2rem;
+  }
+.lds-dual-ring:after {
+content: " ";
+display: block;
+width: 64px;
+height: 64px;
+margin: 8px;
+border-radius: 50%;
+border: 6px solid rgb(214, 9, 9);
+border-color: #ccc transparent #ccc transparent;
+animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(130%);
+  }
+}
+
+@media (prefers-reduced-motion: dark) {
+    body{
+        background: rgb(16, 5, 47);
+        color: white
+    }
+    .theme{
+        background: black;
+        border: solid white;
+    }
+    .circle-in-circle {
+        background-color: white;
+    }
+    .each-item {
+        background: rgb(35, 52, 37);
+        color:white;
+    }
+}
